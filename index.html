@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>Happy Teachers' Day</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Cormorant+SC:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/festival-base.css">
+<style>
+  :root{
+    --bg-deep: #1A0509;
+    --bg-mid: #3B0A14;
+    --bg-light: #5C1122;
+  }
+</style>
+</head>
+<body>
+
+<div class="gold-dust" aria-hidden="true"></div>
+
+<!-- SCREEN 1: LOADING -->
+<section id="screen-loading" class="screen active">
+  <div class="diya" aria-hidden="true">
+    <div class="flame"></div>
+    <div class="flame-glow"></div>
+    <div class="diya-body"></div>
+  </div>
+  <p class="loading-line" id="loading-line-1">LOADING YOUR GIFT</p>
+  <p class="loading-line hidden" id="loading-line-2">CHECKING THE CALENDAR, MAM</p>
+  <div class="dots" id="loading-dots"><span></span><span></span><span></span></div>
+</section>
+
+<!-- SCREEN 1.5: EARLY / LATE GATE -->
+<section id="screen-gate" class="screen">
+  <p class="gate-eyebrow">Greeting via Manuraj Pandey</p>
+  <h1 class="gate-title" id="gate-title">&nbsp;</h1>
+  <p class="gate-message" id="gate-message">&nbsp;</p>
+</section>
+
+<!-- SCREEN 2: NAME ENTRY -->
+<section id="screen-name" class="screen">
+  <div class="corner corner-tl" aria-hidden="true"></div>
+  <div class="corner corner-tr" aria-hidden="true"></div>
+  <div class="corner corner-bl" aria-hidden="true"></div>
+  <div class="corner corner-br" aria-hidden="true"></div>
+
+  <form id="name-form" class="name-form" autocomplete="off">
+    <p class="eyebrow">Before I can hand it over</p>
+    <label for="teacher-name" class="name-label">Your good name, Mam</label>
+    <input type="text" id="teacher-name" name="teacher-name" placeholder="e.g. Priya Sharma" maxlength="40" required>
+    <button type="submit" class="btn-gold">
+      <span>Open My Gift</span>
+    </button>
+  </form>
+</section>
+
+<!-- SCREEN 3: 3D CARD -->
+<section id="screen-card" class="screen">
+  <div class="card-stage">
+    <div class="card-3d" id="card-3d">
+
+      <div class="card-face card-cover">
+        <div class="cover-frame">
+          <div class="cover-mark" aria-hidden="true">
+            <svg viewBox="0 0 100 100" fill="none">
+              <circle cx="50" cy="50" r="46" stroke="url(#gg1)" stroke-width="1.5"/>
+              <circle cx="50" cy="50" r="36" stroke="url(#gg1)" stroke-width="1"/>
+              <path d="M50 20 L54 44 L78 48 L54 52 L50 76 L46 52 L22 48 L46 44 Z" fill="url(#gg1)"/>
+              <defs>
+                <linearGradient id="gg1" x1="0" y1="0" x2="100" y2="100">
+                  <stop offset="0" stop-color="#F6D77A"/>
+                  <stop offset="1" stop-color="#B8862F"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <p class="cover-via">GREETING VIA MANURAJ PANDEY</p>
+          <h1 class="cover-title">Happy<br>Teachers' Day</h1>
+          <p class="cover-tap">tap to open</p>
+        </div>
+      </div>
+
+      <div class="card-face card-inside">
+        <div class="parchment">
+          <div class="corner corner-tl" aria-hidden="true"></div>
+          <div class="corner corner-tr" aria-hidden="true"></div>
+          <div class="corner corner-bl" aria-hidden="true"></div>
+          <div class="corner corner-br" aria-hidden="true"></div>
+
+          <p class="via-line">GREETING VIA MANURAJ PANDEY</p>
+          <h2 class="letter-heading">Happy Teachers&rsquo; Day! <span class="emoji">🌸📚</span></h2>
+          <p class="teacher-name" id="letter-name">Respected Mam,</p>
+
+          <div class="letter-body" id="letter-body">
+            <p>On this special occasion of Teachers' Day, I would like to take a moment to thank you from the bottom of my heart for everything you do for us. A teacher is not just someone who teaches lessons from books; a true teacher teaches us how to face life, how to learn from our mistakes, how to believe in ourselves, and how to keep moving forward even when things become difficult.</p>
+            <p>Every day, you come to class and give us your time, patience, knowledge, and energy. Sometimes we may not realize how much effort goes into teaching us, correcting us, answering our endless questions, and helping us understand things that seem difficult at first. But all those little things make a huge difference in our lives.</p>
+            <p>You have taught us much more than subjects and chapters. You have taught us discipline, responsibility, confidence, kindness, and the importance of never giving up. Your words of encouragement can turn a difficult day into a better one, and your guidance can help us see possibilities that we may not have noticed before.</p>
+            <p>Teachers are like the people who light a lamp for others while helping them find their own path. The knowledge and values you give us will stay with us long after we leave the classroom. Years from now, when we look back at our school days, we may forget some lessons from our textbooks, but we will remember the teachers who believed in us, guided us, corrected us, and helped us become better people.</p>
+            <p>I know that students are not always perfect. Sometimes we make mistakes, sometimes we don't pay attention, sometimes we make the classroom a little too noisy 😅, and sometimes we may not understand how much our teachers are doing for us. But behind every correction is a lesson, behind every piece of advice is concern, and behind every bit of encouragement is a teacher who wants their students to succeed.</p>
+            <p>Thank you for being patient with us. Thank you for answering our questions. Thank you for correcting our mistakes instead of letting us repeat them. Thank you for encouraging us when we doubt ourselves. And most importantly, thank you for believing that we can become something great.</p>
+            <p>A good teacher doesn't simply prepare students for an exam. A great teacher prepares students for life. You have been an important part of our journey, and for that, you deserve more than just a "Thank you."</p>
+            <p>So today, I want to say:<br>Thank you for teaching us.<br>Thank you for guiding us.<br>Thank you for believing in us.<br>Thank you for inspiring us.<br>And thank you for being a teacher we can always remember. <span class="emoji">❤️</span></p>
+            <p>May you always have happiness, good health, success, and countless reasons to smile. May all the effort you put into your students come back to you in the form of their achievements and the lives they build.</p>
+            <p>With lots of respect and gratitude,<br>Thank you for being an amazing teacher! <span class="emoji">🙏❤️</span></p>
+          </div>
+
+          <button type="button" class="btn-outline-gold" id="btn-close-card">
+            <span>Close Card</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  window.FEST_CONFIG = { festival: "Teachers' Day", targetDate: "2026-09-05" };
+</script>
+<script src="js/festival-app.js"></script>
+</body>
+</html>

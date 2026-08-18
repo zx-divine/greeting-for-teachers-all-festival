@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>Happy Independence Day</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Cormorant+SC:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/festival-base.css">
+<style>
+  :root{
+    --bg-deep: #180D02;
+    --bg-mid: #3B2205;
+    --bg-light: #5C3A0C;
+  }
+</style>
+</head>
+<body>
+
+<div class="gold-dust" aria-hidden="true"></div>
+
+<!-- SCREEN 1: LOADING -->
+<section id="screen-loading" class="screen active">
+  <div class="spark" aria-hidden="true">
+    <div class="spark-ray"></div>
+    <div class="spark-core"></div>
+  </div>
+  <p class="loading-line" id="loading-line-1">LOADING YOUR GIFT</p>
+  <p class="loading-line hidden" id="loading-line-2">CHECKING THE CALENDAR, MAM</p>
+  <div class="dots" id="loading-dots"><span></span><span></span><span></span></div>
+</section>
+
+<!-- SCREEN 1.5: EARLY / LATE GATE -->
+<section id="screen-gate" class="screen">
+  <p class="gate-eyebrow">Greeting via Manuraj Pandey</p>
+  <h1 class="gate-title" id="gate-title">&nbsp;</h1>
+  <p class="gate-message" id="gate-message">&nbsp;</p>
+</section>
+
+<!-- SCREEN 2: NAME ENTRY -->
+<section id="screen-name" class="screen">
+  <div class="corner corner-tl" aria-hidden="true"></div>
+  <div class="corner corner-tr" aria-hidden="true"></div>
+  <div class="corner corner-bl" aria-hidden="true"></div>
+  <div class="corner corner-br" aria-hidden="true"></div>
+
+  <form id="name-form" class="name-form" autocomplete="off">
+    <p class="eyebrow">Before I can hand it over</p>
+    <label for="teacher-name" class="name-label">Your good name, Mam</label>
+    <input type="text" id="teacher-name" name="teacher-name" placeholder="e.g. Priya Sharma" maxlength="40" required>
+    <button type="submit" class="btn-gold">
+      <span>Open My Gift</span>
+    </button>
+  </form>
+</section>
+
+<!-- SCREEN 3: 3D CARD -->
+<section id="screen-card" class="screen">
+  <div class="card-stage">
+    <div class="card-3d" id="card-3d">
+
+      <div class="card-face card-cover">
+        <div class="cover-frame">
+          <div class="cover-mark" aria-hidden="true">
+            <svg viewBox="0 0 100 100" fill="none">
+              <circle cx="50" cy="50" r="46" stroke="url(#gg1)" stroke-width="1.5"/>
+              <circle cx="50" cy="50" r="36" stroke="url(#gg1)" stroke-width="1"/>
+              <path d="M50 20 L54 44 L78 48 L54 52 L50 76 L46 52 L22 48 L46 44 Z" fill="url(#gg1)"/>
+              <defs>
+                <linearGradient id="gg1" x1="0" y1="0" x2="100" y2="100">
+                  <stop offset="0" stop-color="#F6D77A"/>
+                  <stop offset="1" stop-color="#B8862F"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <p class="cover-via">GREETING VIA MANURAJ PANDEY</p>
+          <h1 class="cover-title">Happy<br>Independence Day</h1>
+          <p class="cover-tap">tap to open</p>
+        </div>
+      </div>
+
+      <div class="card-face card-inside">
+        <div class="parchment">
+          <div class="corner corner-tl" aria-hidden="true"></div>
+          <div class="corner corner-tr" aria-hidden="true"></div>
+          <div class="corner corner-bl" aria-hidden="true"></div>
+          <div class="corner corner-br" aria-hidden="true"></div>
+
+          <p class="via-line">GREETING VIA MANURAJ PANDEY</p>
+          <h2 class="letter-heading">Happy Independence Day! <span class="emoji">🇮🇳🎉</span></h2>
+          <p class="teacher-name" id="letter-name">Respected Mam,</p>
+
+          <div class="letter-body" id="letter-body">
+            <p>Independence Day reminds us of the freedom an entire nation fought for, but there's a quieter kind of freedom you've given us too — the freedom to ask questions without feeling small, and to be wrong in your classroom without being made to feel it.</p>
+            <p>A country isn't built only in its parliaments; it's built one classroom at a time, by teachers who take the trouble to shape not just students, but citizens who can think for themselves. That's exactly what you've done for us.</p>
+            <p>Every value you've quietly taught — fairness, discipline, respect for people different from us — is the same thread that holds a free country together. You've handed us more of that than any textbook chapter could.</p>
+            <p>On this Independence Day, thank you for being one of the people actually doing the work of nation-building, one lesson at a time.</p>
+            <p>Jai Hind, Mam — and thank you.</p>
+          </div>
+
+          <button type="button" class="btn-outline-gold" id="btn-close-card">
+            <span>Close Card</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  window.FEST_CONFIG = { festival: "Independence Day", targetDate: "2027-08-15" };
+</script>
+<script src="js/festival-app.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>Happy New Year</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Cormorant+SC:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/festival-base.css">
+<style>
+  :root{
+    --bg-deep: #05070F;
+    --bg-mid: #0B1330;
+    --bg-light: #17204F;
+  }
+</style>
+</head>
+<body>
+
+<div class="gold-dust" aria-hidden="true"></div>
+
+<!-- SCREEN 1: LOADING -->
+<section id="screen-loading" class="screen active">
+  <div class="spark" aria-hidden="true">
+    <div class="spark-ray"></div>
+    <div class="spark-core"></div>
+  </div>
+  <p class="loading-line" id="loading-line-1">LOADING YOUR GIFT</p>
+  <p class="loading-line hidden" id="loading-line-2">CHECKING THE CALENDAR, MAM</p>
+  <div class="dots" id="loading-dots"><span></span><span></span><span></span></div>
+</section>
+
+<!-- SCREEN 1.5: EARLY / LATE GATE -->
+<section id="screen-gate" class="screen">
+  <p class="gate-eyebrow">Greeting via Manuraj Pandey</p>
+  <h1 class="gate-title" id="gate-title">&nbsp;</h1>
+  <p class="gate-message" id="gate-message">&nbsp;</p>
+</section>
+
+<!-- SCREEN 2: NAME ENTRY -->
+<section id="screen-name" class="screen">
+  <div class="corner corner-tl" aria-hidden="true"></div>
+  <div class="corner corner-tr" aria-hidden="true"></div>
+  <div class="corner corner-bl" aria-hidden="true"></div>
+  <div class="corner corner-br" aria-hidden="true"></div>
+
+  <form id="name-form" class="name-form" autocomplete="off">
+    <p class="eyebrow">Before I can hand it over</p>
+    <label for="teacher-name" class="name-label">Your good name, Mam</label>
+    <input type="text" id="teacher-name" name="teacher-name" placeholder="e.g. Priya Sharma" maxlength="40" required>
+    <button type="submit" class="btn-gold">
+      <span>Open My Gift</span>
+    </button>
+  </form>
+</section>
+
+<!-- SCREEN 3: 3D CARD -->
+<section id="screen-card" class="screen">
+  <div class="card-stage">
+    <div class="card-3d" id="card-3d">
+
+      <div class="card-face card-cover">
+        <div class="cover-frame">
+          <div class="cover-mark" aria-hidden="true">
+            <svg viewBox="0 0 100 100" fill="none">
+              <circle cx="50" cy="50" r="46" stroke="url(#gg1)" stroke-width="1.5"/>
+              <circle cx="50" cy="50" r="36" stroke="url(#gg1)" stroke-width="1"/>
+              <path d="M50 20 L54 44 L78 48 L54 52 L50 76 L46 52 L22 48 L46 44 Z" fill="url(#gg1)"/>
+              <defs>
+                <linearGradient id="gg1" x1="0" y1="0" x2="100" y2="100">
+                  <stop offset="0" stop-color="#F6D77A"/>
+                  <stop offset="1" stop-color="#B8862F"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <p class="cover-via">GREETING VIA MANURAJ PANDEY</p>
+          <h1 class="cover-title">Happy<br>New Year</h1>
+          <p class="cover-tap">tap to open</p>
+        </div>
+      </div>
+
+      <div class="card-face card-inside">
+        <div class="parchment">
+          <div class="corner corner-tl" aria-hidden="true"></div>
+          <div class="corner corner-tr" aria-hidden="true"></div>
+          <div class="corner corner-bl" aria-hidden="true"></div>
+          <div class="corner corner-br" aria-hidden="true"></div>
+
+          <p class="via-line">GREETING VIA MANURAJ PANDEY</p>
+          <h2 class="letter-heading">Happy New Year! <span class="emoji">🎊🥂</span></h2>
+          <p class="teacher-name" id="letter-name">Respected Mam,</p>
+
+          <div class="letter-body" id="letter-body">
+            <p>As one year closes and another opens, I wanted to take a moment to thank you for everything you carried us through in the year gone by — the syllabus, yes, but also the small everyday moments of guidance that don't show up on any report card.</p>
+            <p>A new year is really just a fresh page, and you've always been someone who helps us write on ours a little more confidently. Every lesson you taught added a line we'll carry into whatever comes next.</p>
+            <p>I hope this new year brings you the kind of good news that doesn't need to be earned, the kind of rest you deserve after a long year of giving your energy to a room full of us, and results that reflect even a fraction of the effort you've put in.</p>
+            <p>Thank you for another year of showing up for us. Here's to a new one that's kinder to you.</p>
+            <p>Happy New Year, Mam — may it be your best one yet.</p>
+          </div>
+
+          <button type="button" class="btn-outline-gold" id="btn-close-card">
+            <span>Close Card</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  window.FEST_CONFIG = { festival: "New Year", targetDate: "2027-01-01" };
+</script>
+<script src="js/festival-app.js"></script>
+</body>
+</html>

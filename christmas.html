@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>Merry Christmas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Cormorant+SC:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/festival-base.css">
+<style>
+  :root{
+    --bg-deep: #06140F;
+    --bg-mid: #0D2B1E;
+    --bg-light: #164A32;
+  }
+</style>
+</head>
+<body>
+
+<div class="gold-dust" aria-hidden="true"></div>
+
+<!-- SCREEN 1: LOADING -->
+<section id="screen-loading" class="screen active">
+  <div class="spark" aria-hidden="true">
+    <div class="spark-ray"></div>
+    <div class="spark-core"></div>
+  </div>
+  <p class="loading-line" id="loading-line-1">LOADING YOUR GIFT</p>
+  <p class="loading-line hidden" id="loading-line-2">CHECKING THE CALENDAR, MAM</p>
+  <div class="dots" id="loading-dots"><span></span><span></span><span></span></div>
+</section>
+
+<!-- SCREEN 1.5: EARLY / LATE GATE -->
+<section id="screen-gate" class="screen">
+  <p class="gate-eyebrow">Greeting via Manuraj Pandey</p>
+  <h1 class="gate-title" id="gate-title">&nbsp;</h1>
+  <p class="gate-message" id="gate-message">&nbsp;</p>
+</section>
+
+<!-- SCREEN 2: NAME ENTRY -->
+<section id="screen-name" class="screen">
+  <div class="corner corner-tl" aria-hidden="true"></div>
+  <div class="corner corner-tr" aria-hidden="true"></div>
+  <div class="corner corner-bl" aria-hidden="true"></div>
+  <div class="corner corner-br" aria-hidden="true"></div>
+
+  <form id="name-form" class="name-form" autocomplete="off">
+    <p class="eyebrow">Before I can hand it over</p>
+    <label for="teacher-name" class="name-label">Your good name, Mam</label>
+    <input type="text" id="teacher-name" name="teacher-name" placeholder="e.g. Priya Sharma" maxlength="40" required>
+    <button type="submit" class="btn-gold">
+      <span>Open My Gift</span>
+    </button>
+  </form>
+</section>
+
+<!-- SCREEN 3: 3D CARD -->
+<section id="screen-card" class="screen">
+  <div class="card-stage">
+    <div class="card-3d" id="card-3d">
+
+      <div class="card-face card-cover">
+        <div class="cover-frame">
+          <div class="cover-mark" aria-hidden="true">
+            <svg viewBox="0 0 100 100" fill="none">
+              <circle cx="50" cy="50" r="46" stroke="url(#gg1)" stroke-width="1.5"/>
+              <circle cx="50" cy="50" r="36" stroke="url(#gg1)" stroke-width="1"/>
+              <path d="M50 20 L54 44 L78 48 L54 52 L50 76 L46 52 L22 48 L46 44 Z" fill="url(#gg1)"/>
+              <defs>
+                <linearGradient id="gg1" x1="0" y1="0" x2="100" y2="100">
+                  <stop offset="0" stop-color="#F6D77A"/>
+                  <stop offset="1" stop-color="#B8862F"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <p class="cover-via">GREETING VIA MANURAJ PANDEY</p>
+          <h1 class="cover-title">Merry<br>Christmas</h1>
+          <p class="cover-tap">tap to open</p>
+        </div>
+      </div>
+
+      <div class="card-face card-inside">
+        <div class="parchment">
+          <div class="corner corner-tl" aria-hidden="true"></div>
+          <div class="corner corner-tr" aria-hidden="true"></div>
+          <div class="corner corner-bl" aria-hidden="true"></div>
+          <div class="corner corner-br" aria-hidden="true"></div>
+
+          <p class="via-line">GREETING VIA MANURAJ PANDEY</p>
+          <h2 class="letter-heading">Merry Christmas! <span class="emoji">🎄🌟</span></h2>
+          <p class="teacher-name" id="letter-name">Respected Mam,</p>
+
+          <div class="letter-body" id="letter-body">
+            <p>Christmas is a season of giving, and if I think honestly about it, you've been giving to us all year round — patience wrapped as lessons, encouragement wrapped as corrections, and belief in us wrapped in almost everything you say.</p>
+            <p>The best gifts aren't always under a tree. Sometimes they're a teacher staying back to explain one more time, or noticing when a student is having a hard day, or simply making a classroom feel like a safe place to get things wrong before getting them right.</p>
+            <p>You've given us more than facts and formulas. You've given us a little more confidence than we walked in with, and that's a gift we'll be unwrapping for years to come.</p>
+            <p>This Christmas, I hope you get to rest, to be surrounded by people who care for you the way you care for your students, and to feel just how much you're appreciated — even on the days it goes unsaid.</p>
+            <p>Wishing you a Christmas as warm and generous as you've always been to us.</p>
+          </div>
+
+          <button type="button" class="btn-outline-gold" id="btn-close-card">
+            <span>Close Card</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  window.FEST_CONFIG = { festival: "Christmas", targetDate: "2026-12-25" };
+</script>
+<script src="js/festival-app.js"></script>
+</body>
+</html>

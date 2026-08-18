@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>Happy Diwali</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Cormorant+SC:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/festival-base.css">
+<style>
+  :root{
+    --bg-deep: #1A0509;
+    --bg-mid: #3B0A14;
+    --bg-light: #5C1122;
+  }
+</style>
+</head>
+<body>
+
+<div class="gold-dust" aria-hidden="true"></div>
+
+<!-- SCREEN 1: LOADING -->
+<section id="screen-loading" class="screen active">
+  <div class="diya" aria-hidden="true">
+    <div class="flame"></div>
+    <div class="flame-glow"></div>
+    <div class="diya-body"></div>
+  </div>
+  <p class="loading-line" id="loading-line-1">LOADING YOUR GIFT</p>
+  <p class="loading-line hidden" id="loading-line-2">CHECKING THE CALENDAR, MAM</p>
+  <div class="dots" id="loading-dots"><span></span><span></span><span></span></div>
+</section>
+
+<!-- SCREEN 1.5: EARLY / LATE GATE -->
+<section id="screen-gate" class="screen">
+  <p class="gate-eyebrow">Greeting via Manuraj Pandey</p>
+  <h1 class="gate-title" id="gate-title">&nbsp;</h1>
+  <p class="gate-message" id="gate-message">&nbsp;</p>
+</section>
+
+<!-- SCREEN 2: NAME ENTRY -->
+<section id="screen-name" class="screen">
+  <div class="corner corner-tl" aria-hidden="true"></div>
+  <div class="corner corner-tr" aria-hidden="true"></div>
+  <div class="corner corner-bl" aria-hidden="true"></div>
+  <div class="corner corner-br" aria-hidden="true"></div>
+
+  <form id="name-form" class="name-form" autocomplete="off">
+    <p class="eyebrow">Before I can hand it over</p>
+    <label for="teacher-name" class="name-label">Your good name, Mam</label>
+    <input type="text" id="teacher-name" name="teacher-name" placeholder="e.g. Priya Sharma" maxlength="40" required>
+    <button type="submit" class="btn-gold">
+      <span>Open My Gift</span>
+    </button>
+  </form>
+</section>
+
+<!-- SCREEN 3: 3D CARD -->
+<section id="screen-card" class="screen">
+  <div class="card-stage">
+    <div class="card-3d" id="card-3d">
+
+      <div class="card-face card-cover">
+        <div class="cover-frame">
+          <div class="cover-mark" aria-hidden="true">
+            <svg viewBox="0 0 100 100" fill="none">
+              <circle cx="50" cy="50" r="46" stroke="url(#gg1)" stroke-width="1.5"/>
+              <circle cx="50" cy="50" r="36" stroke="url(#gg1)" stroke-width="1"/>
+              <path d="M50 20 L54 44 L78 48 L54 52 L50 76 L46 52 L22 48 L46 44 Z" fill="url(#gg1)"/>
+              <defs>
+                <linearGradient id="gg1" x1="0" y1="0" x2="100" y2="100">
+                  <stop offset="0" stop-color="#F6D77A"/>
+                  <stop offset="1" stop-color="#B8862F"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <p class="cover-via">GREETING VIA MANURAJ PANDEY</p>
+          <h1 class="cover-title">Happy<br>Diwali</h1>
+          <p class="cover-tap">tap to open</p>
+        </div>
+      </div>
+
+      <div class="card-face card-inside">
+        <div class="parchment">
+          <div class="corner corner-tl" aria-hidden="true"></div>
+          <div class="corner corner-tr" aria-hidden="true"></div>
+          <div class="corner corner-bl" aria-hidden="true"></div>
+          <div class="corner corner-br" aria-hidden="true"></div>
+
+          <p class="via-line">GREETING VIA MANURAJ PANDEY</p>
+          <h2 class="letter-heading">Happy Diwali! <span class="emoji">🪔✨</span></h2>
+          <p class="teacher-name" id="letter-name">Respected Mam,</p>
+
+          <div class="letter-body" id="letter-body">
+            <p>On this Diwali, I want to pause and say thank you — because long before we knew what a diya was for, you were already lighting one for us, one lesson at a time.</p>
+            <p>A festival of lights makes so much more sense once you've had a teacher like you. You've shown us that knowledge is its own kind of flame: it doesn't reduce when it's shared, it only spreads further, brighter, into rooms it hasn't reached yet.</p>
+            <p>Every doubt you cleared, every mistake you corrected gently instead of harshly, every extra minute you gave us after the bell had already rung — that was you lighting a diya in a corner we didn't even know was dark.</p>
+            <p>This Diwali, may your home be as full of warmth as our classroom is because of you. May the coming year bring you the same peace, prosperity, and joy that you've always tried to bring into ours.</p>
+            <p>Thank you for being one of the steadiest lights in our lives, on Diwali and on every ordinary day in between.</p>
+          </div>
+
+          <button type="button" class="btn-outline-gold" id="btn-close-card">
+            <span>Close Card</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  window.FEST_CONFIG = { festival: "Diwali", targetDate: "2026-11-08" };
+</script>
+<script src="js/festival-app.js"></script>
+</body>
+</html>
